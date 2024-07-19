@@ -1,0 +1,10 @@
+@import url('/src/assets/styles/typography.css');
+@import url('/src/assets/styles/icomoon.css');
+
+.icon {
+    font-family: 'trellicons';
+}
+
+.icon:before {
+    color: green;
+}
