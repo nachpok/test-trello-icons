@@ -44,7 +44,7 @@ function App() {
 
     return (
         <div className="app">
-            <h1>Trello Icons</h1>
+            <h1>Trello Icons by class name</h1>
             <input
                 type="text"
                 value={filter}
