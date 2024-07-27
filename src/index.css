@@ -6,5 +6,68 @@
 }
 
 .icon:before {
-    color: green;
+    color: black;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(20% - 8px);
+    /* 5 icons per row, accounting for gap */
+    box-sizing: border-box;
+}
+
+.icon::before {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .icon {
+        width: calc(25% - 8px);
+        /* 4 icons per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .icon {
+        width: calc(33.333% - 7px);
+        /* 3 icons per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .icon {
+        width: calc(50% - 5px);
+        /* 2 icons per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .icon {
+        width: 100%;
+        /* 1 icon per row */
+    }
 }
